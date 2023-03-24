@@ -12,11 +12,14 @@ textInput.addEventListener("focus", () => {
 function validate(textInput, dtLength){
     if (textInput.value.length == dtLength) {
         textInput.classList.add("valid")
+        textInput.classList.remove("invalid")
     } else {
         textInput.classList.add("invalid")
+        textInput.classList.remove("valid")
     }
 };
 
 textInput.addEventListener("blur", () => {
     validate(textInput, dtLength)
   });
+
