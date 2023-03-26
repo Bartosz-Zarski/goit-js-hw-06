@@ -29,13 +29,11 @@ const createElement = () => {
 };
 
 // USUNIĘCIE DIVA
-const destroyElement = () => {
-  let amount = inputEl.value;
-  const count = parseInt(amount, 10);
-  for (let i = 0; i < count; i++) {
-    divWrapper.removeChild(divWrapper.lastChild);
-  }
-};
-
+const destroyElements = () => {
+  divWrapper.innerHTML = ''
+    inputEl.value = '';
+    width = 30;
+    height = 30;
+}
 buttonAdd.addEventListener("click", createElement);
-buttonRemove.addEventListener("click", destroyElement);
+buttonRemove.addEventListener("click", destroyElements);
