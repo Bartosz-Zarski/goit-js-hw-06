@@ -1,10 +1,10 @@
 const ingredients = [
-  'Potatoes',
-  'Mushrooms',
-  'Garlic',
-  'Tomatos',
-  'Herbs',
-  'Condiments',
+  "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
 ];
 const list = document.querySelector("#ingredients");
 
@@ -14,11 +14,4 @@ ingredients.forEach((element) => {
   ingredientsIndex.textContent = element;
   list.append(ingredientsIndex);
 });
-// ingredients.forEach((element, index, ingredients) => {
-//   const nextIndex = index + 1;
-//   if (nextIndex < ingredients.length) {
-//     element.nextIndex = nextIndex;
-//   }
-// });
-
 
